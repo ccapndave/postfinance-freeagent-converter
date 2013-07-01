@@ -1,4 +1,4 @@
 postfinance-freeagent-converter
 ===============================
 
-Script to convert Postfinance (Document Manager 3) output into a Freeagent acceptable CSV
+My own script which anyone else is very welcome to use if they like.  It takes CSV output from orders exported from Document Manager 3 (which is the e-banking software used by Postfinance) and reformats it into CSV that can be directly imported into http://www.freeagent.com/ as an uploaded bank statement.
