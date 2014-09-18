@@ -18,7 +18,7 @@
         "freeagent"
     ],
     "dependencies" : {
-        "csv": "*"
+        "csv": "0.3.6"
     },
     "license": "MIT",
     "engines": {
