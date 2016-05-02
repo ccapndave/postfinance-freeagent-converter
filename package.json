@@ -1,27 +1,23 @@
 {
-    "name": "postfinance-converter",
-    "version": "0.0.1",
-    "author": "Dave Keen",
-    "description": "a simple zero-configuration command-line http server",
-    "contributors": [
-    ],
-    "bin": {
-    },
-    "scripts": {
-    },
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "keywords": [
-        "postfinance",
-        "freeagent"
-    ],
-    "dependencies" : {
-        "csv": "0.3.6"
-    },
-    "license": "MIT",
-    "engines": {
-        "node": ">=0.6"
-    }
+  "name": "postfinance-converter",
+  "version": "2.0.0",
+  "author": "Dave Keen",
+  "description": "a simple zero-configuration command-line http server",
+  "contributors": [],
+  "bin": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "postfinance",
+    "freeagent"
+  ],
+  "dependencies": {
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0.0"
+  }
 }
