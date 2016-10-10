@@ -16,7 +16,7 @@ const result =
             
             const credit = parseFloat(row[2].replace("'", "")) || 0;
             const debit = parseFloat(row[3].replace("'", "")) || 0;
-            const details = row[1];
+            const details = `"${row[1]}"`;
             const date = row[0].replace(/\./g, "/");
             
             // Since credit and debit contain the sign (+ or -) we can just add them together as parseInt will already have dealt with it
@@ -29,4 +29,4 @@ const result =
         // And finally a string;
         .join("\n");
 
-console.log(result);
+fs.writeFileSync(`${__dirname}/new-converted.csv`, result, { encoding: 'utf-8' });
