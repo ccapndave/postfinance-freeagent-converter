@@ -15,6 +15,7 @@
     "freeagent"
   ],
   "dependencies": {
+    "moment": "^2.17.1"
   },
   "license": "MIT",
   "engines": {

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
+const moment = require("moment");
 
 const result =
     fs.readFileSync(`${__dirname}/new.csv`, { encoding: 'utf-8' })
@@ -16,8 +17,8 @@ const result =
             
             const credit = parseFloat(row[2].replace("'", "")) || 0;
             const debit = parseFloat(row[3].replace("'", "")) || 0;
-            const details = `"${row[1]}"`;
-            const date = row[0].replace(/\./g, "/");
+            const details = `${row[1]}`;
+            const date = moment(row[0].replace(/\./g, "/")).format("DD/MM/YYYY");
             
             // Since credit and debit contain the sign (+ or -) we can just add them together as parseInt will already have dealt with it
             return [ date, credit + debit, details ];

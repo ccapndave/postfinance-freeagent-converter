@@ -1,3 +1,2 @@
-all
-all.csv
-all-converted.csv
+*.csv
+node_modules
